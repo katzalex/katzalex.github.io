@@ -51,6 +51,10 @@ font-family: 'Montserrat',sans-serif;
 #footer{
   background-color: #b12626;
   padding : 30x 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .column{
