@@ -45,7 +45,6 @@ main {
 .navbar-nav {
   list-style: none;
   padding: 0;
-  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,16 +80,16 @@ main {
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
-  color: aqua;
 }
 
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
   .navbar {
-    bottom: 0;
+    bottom: 0rem;
     width: 100vw;
     height: 5rem;
+    
   }
 
   .logo {
@@ -116,6 +115,8 @@ main {
     top: 0;
     width: 5rem;
     height: 100vh;
+    margin-top: 3rem;
+
   }
 
   .navbar:hover {
@@ -160,4 +161,8 @@ path {
   font-size: 20px;
   font-weight: bold;
   color:rgb(58, 109, 151);
+}
+
+main img{
+  max-width: 100%;
 }
