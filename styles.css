@@ -1,140 +1,192 @@
 @import "url(http://fonts.googleapts.com/css?family=Montserrat:400,)";
+
+:root {
+  font-size: 16px;
+  font-family: 'Montserrat';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ffffff;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+}
+
 body {
+  color: black;
+  background-color: white;
   margin: 0;
-  
-
-font-family: 'Montserrat',sans-serif;
+  padding: 0;
 }
 
-#header{
-  background-color: #21d8b3;
-  height: 150px;
-  line-height: 150px;
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}ä
+
+body::-webkit-scrollbar-track {
+  background: #0a0adf;
 }
 
-#header a{
-  color: white;
-  text-decoration: none;
-
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
 }
 
-#header a:hover{
-  color: #222;
+main {
+  margin-left: 5rem;
+  padding: 1rem;
 }
 
-#header-title {
-  display: block;
-  float: left;
-
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#header-nav {
-  display: block;
-  float: right;
-  margin-top: 0;
-}
-
-#header-nav li {
-  display: inline;
-  padding-left: 20px;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-#footer{
-  background-color: #b12626;
-  padding : 30x 0;
+.navbar {
   position: fixed;
-  left: 0;
-  bottom: 0;
+  background-color: var(--bg-primary);
+  transition: width 600ms ease;
+  
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
   width: 100%;
 }
 
-.column{
-  min-width: 300px;
-  display: inline-block;
-  vertical-align: bottom;
+/* .nav-item:last-child {
+  margin-top: auto;
+} */
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
 }
 
-#footer h4{
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.nav-link:hover {
+  align-items: left;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
 }
 
-#footer p{
-  color: white;
+.link-text {
+  display: none;
+  margin-left: 1rem;
 }
 
-#footer a {
-text-decoration: none;
-color:#ff9100;
+
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
 }
 
- a:hover{
-  color: #F6A623
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
 }
 
-.post {
-max-width: 800px;
-margin : 0 auto;
-padding: 60px 0;
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo svg
+  {
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text
+  {
+    left: 0px;
+  }
 }
 
-.post-author img {
-  height: 50px;
-  width: 50px;
-  vertical-align: middle;
-
+.dark {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
 }
 
-.post-author span {
-  margin-left: 16px;
+.light {
+  --text-primary: #1f1f1f;
+  --text-secondary: #000000;
+  --bg-primary: #ffffff;
+  --bg-secondary: #e4e4e4;
 }
 
-.post-date {
-  color: #D2D2D2;
+.solar {
+  --text-primary: #576e75;
+  --text-secondary: #35535c;
+  --bg-primary: #fdf6e3;
+  --bg-secondary: #f5e5b8;
+}
 
-  font-size: 14px;
+.theme-icon {
+  display: none;
+}
+
+.dark #darkIcon {
+  display: block;
+}
+
+.light #lightIcon {
+  display: block;
+}
+
+.solar #solarIcon {
+  display: block;
+}
+
+#header{
+  background-color: #abbdb9;
+  height: 75px;
+  line-height: 75px;
+}
+
+#header-title {  
+
+  font-size: 40px;
   font-weight: bold;
-
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-h1,h2,h3,h4 {
-  color: #333
-}
-
-p {
-  line-height: 1.5;
-}
-
-.post, .about {
-  max-width: 800px;
-  margin:0 auto;
-  padding: 60px 0;
-}
-.about {
+  color: aliceblue;
   text-align: center;
-}
-.post-author img,
-.about-author img {
-  border-radius: 50%;
-}
-
-.about-author img {
-  height: 100px;
-  width: 100px;
-  vertical-align: middle;
-}
-.post-container:nth-child(even){
-  background-color:#f2f2f2;
 }
