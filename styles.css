@@ -10,24 +10,7 @@
   --transition-speed: 600ms;
 }
 
-body {
-  color: black;
-  background-color: #f1f1f1;
-  margin: 0;
-  padding: 0;
-}
 
-body::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #0a0adf;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
-}
 
 main {
   margin-left: 5rem;
@@ -89,7 +72,6 @@ main {
     bottom: 0rem;
     width: 100vw;
     height: 5rem;
-    
   }
 
   .logo {
@@ -106,7 +88,9 @@ main {
 
   main {
     margin: 0;
+    flex-wrap: wrap;
   }
+  
 }
 
 /* Large screens */
@@ -116,7 +100,6 @@ main {
     width: 5rem;
     height: 100vh;
     margin-top: 3rem;
-
   }
 
   .navbar:hover {
@@ -164,5 +147,17 @@ path {
 }
 
 main img{
-  max-width: 100%;
+    width: auto;
+    flex-shrink: 0; 
+    scroll-snap-align: center;
+    overflow: visible;
+
+    
+@media screen and (min-width: 550px) {
+      width: 50%;
+}
+    
+@media screen and (min-width: 768px) {
+      width: 25%;
+}
 }
