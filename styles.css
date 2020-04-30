@@ -72,7 +72,7 @@ main {
   .navbar {
     top: 0rem;
     width: 100vw;
-    height: 5rem;
+    height: 0rem;
   }
 
   .logo {
@@ -85,6 +85,8 @@ main {
 
   .nav-link {
     justify-content: center;
+    height: 0rem;
+    align-items: center;
   }
 
   main {
@@ -92,6 +94,9 @@ main {
     flex-wrap: wrap;
   }
   
+  .nav-link svg {
+   margin-bottom: 2rem;
+  }
 }
 
 /* Large screens */
