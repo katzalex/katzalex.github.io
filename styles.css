@@ -10,7 +10,24 @@
   --transition-speed: 600ms;
 }
 
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
 
 main {
   margin-left: 5rem;
@@ -21,8 +38,6 @@ main {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
-  
-  
 }
 
 .navbar-nav {
@@ -58,13 +73,11 @@ main {
   margin-left: 1rem;
 }
 
-
 .nav-link svg {
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
 }
-
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
@@ -99,7 +112,7 @@ main {
     top: 0;
     width: 5rem;
     height: 100vh;
-    margin-top: 3rem;
+    
   }
 
   .navbar:hover {
@@ -108,6 +121,7 @@ main {
 
   .navbar:hover .link-text {
     display: inline;
+    font-weight: bold;
   }
 
   .navbar:hover .logo svg
@@ -119,12 +133,16 @@ main {
   {
     left: 0px;
   }
-}
 
+  #header{
+    top: 0;
+    width: 100%;
+  }
+}
 
 #header{
   background-color: var(--bg-primary);
-  height: 75px;
+  height: 80px;
   line-height: 75px;
 }
 
@@ -146,18 +164,63 @@ path {
   color:rgb(58, 109, 151);
 }
 
-main img{
-    width: auto;
-    flex-shrink: 0; 
-    scroll-snap-align: center;
-    overflow: visible;
+/* Small screens */
+@media only screen and (max-width: 550px) {
+  .navbar {
+    bottom: 0rem;
+    width: 100vw;
+    height: 5rem;
+  }
 
-    
-@media screen and (min-width: 550px) {
-      width: 50%;
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  main img{
+    max-width: 100%;
+    overflow-y: scroll;
+  }
+  
 }
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
     
-@media screen and (min-width: 768px) {
-      width: 25%;
-}
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo svg
+  {
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text
+  {
+    left: 0px;
+  }
+
+  #header{
+    top: 0;
+    width: 100%;
+  }
 }
