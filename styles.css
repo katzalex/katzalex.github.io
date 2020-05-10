@@ -1,0 +1,91 @@
+@import "url(http://fonts.googleapts.com/css?family=Montserrat:500,)";
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+   color: white;
+   font-size: 1.3rem;
+
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-image:linear-gradient( rgb(18, 18, 20) ,rgb(36, 37, 42)) ;
+}
+
+.logo{
+    cursor: pointer;
+    margin: 0 1.5rem;
+}
+
+.nav-link{
+    list-style: none;  
+}
+
+.nav-link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-link li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-link li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,136,169,0.8);  
+}
+
+body{
+   background-color: #24252A;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+  
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+ }
