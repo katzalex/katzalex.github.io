@@ -98,6 +98,8 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    color: black;
+    font-weight: bold;
   }
 
 @media screen and (min-width: 600px) {
