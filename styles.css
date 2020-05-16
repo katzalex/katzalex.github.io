@@ -108,10 +108,13 @@ body{
         padding: 0px 10px;
     }
     header{
-        text-align: flex-start;
-        
-        
+        text-align: flex-start;       
     }
+
+    .logo{
+        display: none;
+    }
+
   }
 .heading{
     text-align: center;
