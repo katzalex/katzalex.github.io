@@ -126,6 +126,10 @@ body{
       right: 0;    
 }
 
+footer a:hover{
+    color: #0088a9;
+}
+
 .container{
     margin-left: 5%;
     margin-top: 1rem;
