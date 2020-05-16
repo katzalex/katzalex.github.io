@@ -5,16 +5,22 @@
     font-weight: 500;
     margin: 0;
     padding: 0;
-   color: white;
-   font-size: 1.3rem;
-   
-
+    color: white;
+    font-size: 1.3rem;
 }
 
-li, a, button{
+button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+li, a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -23,8 +29,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
-    background-image:linear-gradient( rgb(18, 18, 20) ,rgb(36, 37, 42)) ;
+    padding: .5em;
+    /* background-image:linear-gradient( rgb(18, 18, 20) ,#353535);  */
+    background-color:#292929;
 }
 
 .logo{
@@ -63,7 +70,8 @@ button:hover{
 }
 
 body{
-   background-color: #24252A;
+   /* background-color: #24252A; */
+   background-color: #353535;
 }
 
 .card {
@@ -102,6 +110,34 @@ body{
     font-weight: bold;
   }
 
+  .heading{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+
+  footer{
+      text-align: center;    
+      background-color: #292929;
+      position: fixed;
+      padding: .6em;
+      bottom: 0;
+      left: 0;
+      right: 0;    
+}
+
+.container{
+    margin-left: 5%;
+    margin-top: 1rem;
+    line-height: 130%;
+}
+
+.container img{
+    border-radius: 2rem;
+    margin-right: 2em;
+    float: right;
+}
+
 @media screen and (min-width: 600px) {
     .nav-link li{
         display: inline-block;
@@ -113,14 +149,14 @@ body{
 
 
   }
-.heading{
-    text-align: center;
-}
+
 
 @media screen and (max-width: 600px) {
     .logo{
         display: none;
     }
 
-    
+    .card:hover {
+        display: none;
+     }
   }
