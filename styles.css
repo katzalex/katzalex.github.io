@@ -106,8 +106,22 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: solid;
+  }
+
+  .centered2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
     color: black;
     font-weight: bold;
+    font-size: 2rem;
+    text-decoration: solid;
   }
 
   .heading{
@@ -123,7 +137,8 @@ body{
       padding: .6em;
       bottom: 0;
       left: 0;
-      right: 0;    
+      right: 0;
+      margin-top: 2rem;   
 }
 
 footer a:hover{
@@ -163,4 +178,11 @@ footer a:hover{
     .card:hover {
         display: none;
      }
+
+     .container img{
+        border-radius: 2rem;
+        margin-right: 2em;
+        float: right;
+        margin-left: 2rem;
+    }
   }
