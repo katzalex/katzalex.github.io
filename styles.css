@@ -177,11 +177,15 @@ footer a:hover{
     margin: 0 auto -50px;
     padding: 2rem;
     text-align: justify
+
 }
 
 .container img{
     object-fit: contain;
-	height:16rem;
+    height:16rem;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .container2 img{
@@ -213,7 +217,9 @@ footer a:hover{
      }
 
      .container img{
-
+        text-align: center;
+        display: block;
+        margin: 0px auto;
         height: 16rem;
     }
 
@@ -221,8 +227,10 @@ footer a:hover{
 
         height: 10rem;
         float: none;
-        margin-left: 5rem;
         margin-bottom: 3rem;
         border-radius: 2rem;
+        text-align: center;
+        display: block;
+        margin: 0px auto;
     }
   }
