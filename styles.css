@@ -149,8 +149,13 @@ html{
 }
 
 .push{
-height: 50px;
+height: 2rem;
 }
+
+.push2{/*about.html*/
+    height: 8rem;
+    }
+
 footer a:hover{
     color: #0088a9;
 }
@@ -159,14 +164,29 @@ footer a:hover{
     margin-left: 5%;
     margin-top: 1rem;
     line-height: 130%;
-    padding: 20px;
     min-height: 100%;
     margin: 0 auto -50px;
+    padding: 2rem;
+}
+
+.container2{
+    margin-left: 5%;
+    margin-top: 1rem;
+    line-height: 130%;
+    min-height: 100%;
+    margin: 0 auto -50px;
+    padding: 2rem;
+    text-align: justify
 }
 
 .container img{
-    border-radius: 2rem;
-    margin-right: 2em;
+    object-fit: contain;
+	height:16rem;
+}
+
+.container2 img{
+    object-fit: contain;
+    height:16rem;
     float: right;
 }
 
@@ -183,7 +203,7 @@ footer a:hover{
   }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .logo{
         display: none;
     }
@@ -193,6 +213,16 @@ footer a:hover{
      }
 
      .container img{
-        align-items: center;
+
+        height: 16rem;
+    }
+
+    .container2 img{
+
+        height: 10rem;
+        float: none;
+        margin-left: 5rem;
+        margin-bottom: 3rem;
+        border-radius: 2rem;
     }
   }
