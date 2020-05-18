@@ -10,13 +10,13 @@
     box-sizing: border-box;
 }
 
-button{
+/* button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
     color: #edf0f1;
     text-decoration: none;
-}
+} */
 
 li, a{
     font-family: "Montserrat", sans-serif;
@@ -58,7 +58,7 @@ header{
 }
 
 button{
-    padding: 9px 25px;
+    padding: 9px 20px;
     background-color: rgba(0,136,169,1);
     border: none;
     border-radius: 50px;
@@ -234,7 +234,9 @@ footer a:hover{
         margin-bottom: 1em;
     }
 
-    button{
-        margin-left: 3em;
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
   }
