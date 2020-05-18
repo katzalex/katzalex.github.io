@@ -28,11 +28,11 @@ li, a{
 
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: .5em;
     /* background-image:linear-gradient( rgb(18, 18, 20) ,#353535);  */
     background-color:#292929;
+    overflow: hidden;
 }
 
 .logo{
@@ -46,7 +46,7 @@ header{
 
 .nav-link li{
     display: inline-block;
-    padding: 0px 20sx;
+    padding: 0px 20px;
 }
 
 .nav-link li a{
@@ -63,7 +63,7 @@ button{
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;  
 }
 
 button:hover{
@@ -176,7 +176,6 @@ footer a:hover{
     min-height: 100%;
     margin: 0 auto -50px;
     padding: 2rem;
-    text-align: justify
 
 }
 
@@ -203,7 +202,9 @@ footer a:hover{
         text-align: flex-start;       
     }
 
-
+    button{
+        margin-left: 35em;
+    }
   }
 
 
@@ -224,13 +225,16 @@ footer a:hover{
     }
 
     .container2 img{
-
         height: 10rem;
         float: none;
-        margin-bottom: 3rem;
         border-radius: 2rem;
         text-align: center;
         display: block;
         margin: 0px auto;
+        margin-bottom: 1em;
+    }
+
+    button{
+        margin-left: 3em;
     }
   }
